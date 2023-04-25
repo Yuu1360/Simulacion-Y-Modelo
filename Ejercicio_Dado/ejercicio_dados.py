@@ -25,4 +25,8 @@ def tirar_dado():
         return 0
 
 if __name__ == "__main__":
-    print(apuesta())
+    promedio = 0
+    for i in range(100000):
+        promedio += apuesta()
+    print(promedio/100000)
+
